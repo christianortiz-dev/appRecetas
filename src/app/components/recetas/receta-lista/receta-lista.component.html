@@ -1,0 +1,16 @@
+<div class="list-group">
+
+  @for (receta of recetas; track receta.nombre) {
+  <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"
+    (click)="sendMessage(receta.nombre)">
+    <div>
+      <h4 class="list-group-item-heading">{{receta.nombre}}</h4>
+      <p class="list-group-item-text">{{receta.descripcion}}</p>
+    </div>
+    <div class="ml-auto my-auto">
+      <img src="{{receta.imagen}}" alt="" class="img-fluid" style="max-height: 50px;">
+    </div>
+  </a>
+  }
+
+</div>

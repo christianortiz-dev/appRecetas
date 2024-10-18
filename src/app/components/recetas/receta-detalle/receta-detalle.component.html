@@ -1,0 +1,11 @@
+@for (receta of recetas; track receta.nombre) {
+@if (receta.nombre == valor) {
+<div class="card">
+  <img src="{{receta.imagen}}" class="card-img-top" alt="imagen">
+  <div class="card-body">
+    <h5 class="card-title">{{receta.nombre}}</h5>
+    <p class="card-text">{{receta.descripcion}}</p>
+  </div>
+</div>
+}
+}
